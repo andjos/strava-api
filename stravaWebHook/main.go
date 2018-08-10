@@ -40,6 +40,7 @@ func hubChallengeEvent(c *gin.Context) {
 	log.Println("Hub Challenge Token:", hubChallenge)
 }
 
+//Respond to Strava Post, take care of OwnerID, Objecttype and ObjectID
 func postEvent(c *gin.Context) {
 	d := &stravaE{}
 	c.Bind(d)
