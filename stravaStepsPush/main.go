@@ -24,7 +24,7 @@ var pushBulletToken string
 
 func main() {
 
-	stravaToken = os.Getenv("StravaToken")
+	stravaToken = os.Getenv("stravaToken")
 	if stravaToken == "" {
 		log.Println("Strava token missing!!! :(")
 		os.Exit(1)
